@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100vh; 
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1; 
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            z-index: 2; 
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin: 0 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        #b2, #b3 {
+            color: white;
+            padding: 10px 20px;
+           border-radius: 5px;
+            background-color: forestgreen;
+            font-size: 10 px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        #b3 {
+            background-color: rgb(105, 184, 230);
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        #b1 {
+            border-radius: 15px;
+            font-size: 16px;
+            color: white;
+            padding: 10px 20px;
+            background-color: rgb(177, 19, 45);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="boat-5889919_1280.png" id="i1" alt="Background Image">
+        <div class="navbar">
+            <ul id="u1">
+                <li><a href="#">Slides</a></li>
+            </ul>
+            <ul id="u2">
+                <li><a href="#">Test</a></li>
+                <li><a href="#">Upgrade</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Explore</a></li>
+            </ul>
+            <div id="u3">
+                <button id="b2">Get App</button>
+                <button id="b3">Profile</button>
+            </div>
+        </div>
+        <div class="container">
+            <p>Travel Journal</p>
+            <h1><i>Final <br> Journey</i></h1><br>
+            <button id="b1">START FREE TRIAL</button>
+        </div>
+    </div>
+</body>
+</html>
